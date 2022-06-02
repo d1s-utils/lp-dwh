@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  lp-dwh:
+    image: lp-dwh:1.0.0-stable.0
+    container_name: lp-dwh
+    environment:
+      LP_DWH_DISCORD_WEBHOOKS: "comma-delimited webhook url list"
+      LP_DWH_DISCORD_USERNAME: "discord webhook username"
+      LP_DWH_DISCORD_AVATAR_URL: "discord webhook avatar url"
+      LP_DWH_LISTENER_BASE_URL: "server base url"
+      LP_DWH_LISTENER_AUTHORIZATION: "Authorization header"
+      LP_DWH_LISTENER_GROUPS: "comma delimited list of groups to listen for"
