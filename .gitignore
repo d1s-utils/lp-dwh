@@ -38,3 +38,6 @@ out/
 
 ### Production docker-compose configuration ###
 docker-compose.prod.yml
+
+### Production application configuration ###
+application-production.yml
